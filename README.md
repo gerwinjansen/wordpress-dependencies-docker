@@ -6,5 +6,9 @@ https://github.com/docker-library/wordpress/blob/c705336b1dfe75c82fce00bb8aa7143
 
 This is not usable if you want to package your Wordpress application in an immutable container with only a volume for the upload directory, because you [can't undo a volume](https://stackoverflow.com/questions/44020785/remove-a-volume-in-a-dockerfile).
 
-This repository provides a stripped version of the official Docker file with only the dependencies.
+This repository contains a stripped version of the official Docker file with only the dependencies.
 This is temporary till [#764 Provide a php dependency only image without wordpress specific files](https://github.com/docker-library/wordpress/issues/764) is resolved.
+
+Images are published on https://hub.docker.com/r/gjansen/wordpress-dependencies
+
+Disclaimer: this repository is not maintained and images are likely to have security vulnerabilities. Use it only for proof-of-concept and testing purposes.
